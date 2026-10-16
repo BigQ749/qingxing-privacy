@@ -1,62 +1,103 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>清醒闹钟 · 隐私政策</title>
-    <style>
-      :root { color-scheme: light; }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        background: #f4f6f2;
-        color: #1c1c1e;
-        font: 16px/1.75 "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
-      }
-      main { max-width: 40rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
-      h1 { font-size: 1.8rem; letter-spacing: 0.06em; margin: 0.2rem 0 0.6rem; }
-      h2 { font-size: 1.05rem; margin: 1.8rem 0 0.4rem; }
-      p, li { color: #3a3a3c; }
-      .kicker { letter-spacing: 0.22em; font-size: 12px; color: #6d8a12; }
-      .meta { color: #6d675f; font-size: 14px; }
-    </style>
-  </head>
-  <body>
-    <main>
-      <div class="kicker">QING XING</div>
-      <h1>清醒闹钟隐私政策</h1>
-      <p class="meta">更新日期：2026年9月28日。适用于清醒闹钟鸿蒙版（包名 com.qisaijun.qingxing.hmos）。开发者：齐赛军。</p>
-      <p>清醒闹钟装在你这台手机上。不注册、不登录，没有自己的服务器。闹钟时间、星期、铃声、地点名称和照片只保存在这台手机里，不上传。</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>清醒闹钟 · 隐私政策</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f7f6f3; color: #183c39; font: 16px/1.75 "Noto Sans SC", "Microsoft YaHei", sans-serif; }
+    main { max-width: 42rem; margin: 0 auto; padding: 28px 22px 48px; }
+    h1 { font-size: 1.7rem; line-height: 1.35; }
+    h2 { margin: 1.7rem 0 .4rem; font-size: 1.1rem; }
+    p, li { color: #435851; }
+    a { color: #28735a; overflow-wrap: anywhere; }
+    .meta { color: #68766f; font-size: .9rem; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>清醒闹钟隐私政策</h1>
+  <p class="meta">本页分别提供 Android 版与鸿蒙版政策，请按你安装的版本阅读。</p>
+  <p class="meta">适用于 Android 应用清醒闹钟，包名 com.qisaijun.qingxing。更新日期：2026 年 10 月 14 日。</p>
+  <p>清醒闹钟无需注册或登录。闹钟设置和照片只保存在当前设备的应用私有空间。应用不向开发者服务器上传这些内容。</p>
 
-      <h2>我们处理哪些信息</h2>
-      <ul>
-        <li>你设定的叫醒时间、重复的星期、选择的铃声。</li>
-        <li>你给目标地点起的名字。</li>
-        <li>你现拍或从相册选出的目标图片。</li>
-        <li>闹钟响后，你为了关掉闹钟现拍的照片。</li>
-      </ul>
-      <p>我们不收集手机号、邮箱、通讯录、精确位置、设备标识，也不收集年龄。</p>
+  <h2>处理的信息及用途</h2>
+  <ul>
+    <li>你设置的闹钟时间、重复日期和铃声，用于安排并播放本机闹钟。</li>
+    <li>你输入的目标地点名称和主动拍摄或从系统照片选择器选取的目标照片，用于显示和设置拍照解锁目标。</li>
+    <li>闹钟响起并进入取景页后，应用会使用摄像头实时预览，并在本机持续比较画面与目标照片的相似度。预览帧仅在内存中处理；只有点击快门才会保存验证照片并判断是否停铃。画面和照片不会上传。</li>
+    <li>应用不读取姓名、手机号、通讯录、精确位置或设备标识，也不收集账户信息。</li>
+  </ul>
 
-      <h2>用来做什么</h2>
-      <p>这些内容只用来在本机到点提醒你，并判断你现拍的照片是不是同一个地方。相册里的图片只有你主动选择时才会交给应用。闹钟响的时候必须现拍，不能改从相册交一张。</p>
-      <p>应用不根据这些信息做广告或个性化推荐。</p>
+  <h2>权限和系统能力</h2>
+  <ul>
+    <li><b>android.permission.INTERNET</b>：WebView 使用 HTTPS 本地资源地址加载 APK 内置页面；公开政策链接交由系统浏览器打开。应用业务数据不会通过网络上传。</li>
+    <li><b>android.permission.CAMERA</b>：仅在你主动拍摄目标照片或闹钟响起后点击拍摄时使用。申请前会说明用途；拒绝后可从系统照片选择器选择目标照片，拍照解锁功能不可用。</li>
+    <li><b>android.permission.USE_EXACT_ALARM</b>、<b>android.permission.SCHEDULE_EXACT_ALARM</b>：用于按你设置的时间安排闹钟。系统要求额外授权时，应用会先说明用途，再打开系统授权页面；未授权时改用可能延迟的普通提醒。</li>
+    <li><b>android.permission.POST_NOTIFICATIONS</b>：Android 13 及以上用于显示闹钟通知。申请前会说明用途；拒绝后闹钟仍可设置，但系统可能不显示通知。</li>
+    <li><b>android.permission.USE_FULL_SCREEN_INTENT</b>：在支持的系统版本上用于闹钟响起时显示锁屏全屏提醒。需要系统设置授权时，应用会先说明用途；未授权时可能只显示普通通知。</li>
+    <li><b>android.permission.FOREGROUND_SERVICE</b>、<b>android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK</b>：闹钟响起时用于让铃声在应用切到后台或屏幕锁定后继续播放。</li>
+    <li><b>android.permission.WAKE_LOCK</b>：闹钟响起时保持播放与提醒过程运行。</li>
+    <li><b>android.permission.VIBRATE</b>：闹钟响起时提供振动提醒。</li>
+    <li><b>android.permission.RECEIVE_BOOT_COMPLETED</b>：设备重启后恢复你已设置的闹钟。</li>
+  </ul>
+  <p>应用不申请麦克风、定位、外部存储或整个相册权限。选择照片时使用系统照片选择器，并且只读取你主动选中的图片。应用不读取陀螺仪、加速度计、方向传感器或其他运动传感器，也不调用 DeviceOrientation、DeviceMotion、地理位置或网页通知接口。</p>
 
-      <h2>存在哪里，存多久</h2>
-      <p>信息只保存在当前这台设备上，不会传输到服务器，也不会传到境外。没有云端副本。</p>
-      <p>保存到你清除应用数据或卸载为止。卸载后，系统会一并删除应用数据。没有账号可注销。</p>
+  <h2>存储、共享和保留</h2>
+  <p>闹钟设置保存在本机应用数据中；目标照片和拍摄验证照片保存在应用私有文件或缓存中。照片不上传、不分享给开发者。数据会保留到你清除应用数据或卸载应用；撤回同意会取消闹钟并停止响铃服务，但不会自动删除已保存在本机的设置和照片。</p>
 
-      <h2>权限</h2>
-      <p>相机权限（ohos.permission.CAMERA，权限标识 CAMERA）：仅在你使用相机现拍目标地点，或闹钟响后拍摄验证照片时申请。仅在应用使用期间调用；拒绝后不能拍摄或通过照片验证关闭闹钟。拍摄照片只在本机用于目标比对，不上传、不分享。</p>
-      <p>选择目标图片时，通过系统图片选择器由你主动选择单张图片；应用不申请读取整个相册的权限，也不在后台读取相册。</p>
-      <p>提醒：用于到点叫醒。屏幕关着也会响。这不是把信息发到网上。</p>
-      <p>不申请网络权限，不申请定位权限。</p>
+  <h2>第三方服务</h2>
+  <p>应用没有集成第三方统计、广告、登录或推送 SDK。系统 WebView、闹钟、通知、照片选择器和相机应用属于设备系统能力。打开公开 HTTPS 政策地址时，页面由系统浏览器访问。</p>
 
-      <h2>儿童</h2>
-      <p>本应用供年满 3 周岁的人使用。未满 3 周岁的儿童请不要使用。</p>
-      <p>没有注册，也不收集年龄。如果未满 3 周岁的儿童在这台设备上打开过本应用，卸载或清除应用数据即可删除本机记录。</p>
+  <h2>撤回同意</h2>
+  <p>在应用首页右上角打开“关于”，选择“撤回同意”。应用会清除同意标记、取消已安排的闹钟、停止响铃服务并退出。之后再次打开应用不会加载业务页面，需重新阅读并同意后才能继续使用。</p>
 
-      <h2>联系我们</h2>
-      <p>开发者：齐赛军。联系邮箱：saijunqi@gmail.com。你也可以通过华为应用市场的开发者联系方式留言。</p>
-    </main>
-  </body>
+  <h2 id="rights">你的权利</h2>
+  <p>你可以在应用内查看和修改闹钟时间、重复日期、铃声和目标地点设置。目标照片与验证照片仅保存在本机；如需删除，可在 Android 系统设置中清除清醒闹钟的应用数据，或卸载应用。撤回同意的操作见上方“撤回同意”。</p>
+  <p>应用没有账号或云端副本，开发者无法远程读取、复制或删除你的本机记录。如需咨询、投诉或提出个人信息权利请求，请通过下方邮箱联系开发者；我们会在 15 个工作日内答复。</p>
+
+  <h2>联系我们</h2>
+  <p>开发者：齐赛军。联系邮箱：<a href="mailto:saijunqi@gmail.com">saijunqi@gmail.com</a>。公开隐私政策：<a href="https://bigq749.github.io/qingxing-privacy/">https://bigq749.github.io/qingxing-privacy/</a>。</p>
+
+  <hr>
+  <section id="harmony-policy" aria-labelledby="harmony-title">
+    <h2 id="harmony-title">清醒闹钟鸿蒙版隐私政策</h2>
+    <p class="meta">更新日期：2026年9月28日。适用于清醒闹钟鸿蒙版（包名 com.qisaijun.qingxing.hmos）。开发者：齐赛军。</p>
+    <p>清醒闹钟装在你这台手机上。不注册、不登录，没有自己的服务器。闹钟时间、星期、铃声、地点名称和照片只保存在这台手机里，不上传。</p>
+
+    <h2>我们处理哪些信息</h2>
+    <ul>
+      <li>你设定的叫醒时间、重复的星期、选择的铃声。</li>
+      <li>你给目标地点起的名字。</li>
+      <li>你现拍或从相册选出的目标图片。</li>
+      <li>闹钟响后，你为了关掉闹钟现拍的照片。</li>
+    </ul>
+    <p>我们不收集手机号、邮箱、通讯录、精确位置、设备标识，也不收集年龄。</p>
+
+    <h2>用来做什么</h2>
+    <p>这些内容只用来在本机到点提醒你，并判断你现拍的照片是不是同一个地方。相册里的图片只有你主动选择时才会交给应用。闹钟响的时候必须现拍，不能改从相册交一张。</p>
+    <p>应用不根据这些信息做广告或个性化推荐。</p>
+
+    <h2>存在哪里，存多久</h2>
+    <p>信息只保存在当前这台设备上，不会传输到服务器，也不会传到境外。没有云端副本。</p>
+    <p>保存到你清除应用数据或卸载为止。卸载后，系统会一并删除应用数据。没有账号可注销。</p>
+
+    <h2>权限</h2>
+    <p>相机权限（ohos.permission.CAMERA，权限标识 CAMERA）：仅在你使用相机现拍目标地点，或闹钟响后拍摄验证照片时申请。仅在应用使用期间调用；拒绝后不能拍摄或通过照片验证关闭闹钟。拍摄照片只在本机用于目标比对，不上传、不分享。</p>
+    <p>选择目标图片时，通过系统图片选择器由你主动选择单张图片；应用不申请读取整个相册的权限，也不在后台读取相册。</p>
+    <p>提醒：用于到点叫醒。屏幕关着也会响。这不是把信息发到网上。</p>
+    <p>不申请网络权限，不申请定位权限。</p>
+
+    <h2>儿童</h2>
+    <p>本应用供年满 3 周岁的人使用。未满 3 周岁的儿童请不要使用。</p>
+    <p>没有注册，也不收集年龄。如果未满 3 周岁的儿童在这台设备上打开过本应用，卸载或清除应用数据即可删除本机记录。</p>
+
+    <h2>联系我们</h2>
+    <p>开发者：齐赛军。联系邮箱：saijunqi@gmail.com。你也可以通过华为应用市场的开发者联系方式留言。</p>
+  </section>
+</main>
+</body>
 </html>
